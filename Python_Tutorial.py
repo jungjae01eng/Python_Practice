@@ -1,13 +1,16 @@
 # @author Jungjae Lee
 # Independent Study
 # Created on May 20, 2022
-# Last Updated on May 21, 2022
+# Last Updated on May 22, 2022
 # Sources: Python Tutorial by TechWorld with Nana on the Youtube channel
 # --------------------------------------------------------------------------------
 
 
 # --------------------------------------------------------------------------------
 # --------------------------------- (1) Variables --------------------------------
+print("\n----------------------------- (1) Variables ----------------------------")
+
+
 calculation_to_hours = 24
 name_of_unit = "hours"
 
@@ -18,6 +21,9 @@ print(f"3: 50 days are {50 * calculation_to_hours} {name_of_unit}")
 
 # --------------------------------------------------------------------------------
 # --------------------------------- (2) Functions --------------------------------
+print("\n----------------------------- (2) Functions ----------------------------")
+
+
 def days_to_units2_1():
     print(f"4: 50 days are {50 * calculation_to_hours} {name_of_unit}")
 
@@ -38,6 +44,9 @@ days_to_units2_3(50, "Awesome!")
 
 # --------------------------------------------------------------------------------
 # ----------------------------------- (3) Scope ----------------------------------
+print("\n------------------------------- (3) Scope ------------------------------")
+
+
 def scope_check3_1():
     print("8: " + name_of_unit)     # Global variables
     # print(num_of_days)            # Internal variables: Inside another function - Does not exist in this function
@@ -56,6 +65,9 @@ scope_check3_2(50)
 
 # --------------------------------------------------------------------------------
 # -------------------------------- (4) User Input --------------------------------
+print("\n---------------------------- (4) User Input ----------------------------")
+
+
 def days_to_units4_1(num_of_days):
     return f"14: {num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit}"
 
@@ -77,6 +89,9 @@ print(calculated_value4_2)
 
 # --------------------------------------------------------------------------------
 # --------------- (5) Conditionals (if/else) and Boolean Data Type ---------------
+print("\n----------- (5) Conditionals (if/else) and Boolean Data Type -----------")
+
+
 def days_to_units5_1(num_of_days):
     if num_of_days > 0:
         return f"18: {num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit}"
@@ -132,6 +147,9 @@ validate_and_execute5_3()
 
 # --------------------------------------------------------------------------------
 # ---------------------- (6) Error Handling with Try/Except ----------------------
+print("\n------------------ (6) Error Handling with Try/Except ------------------")
+
+
 def days_to_units6_1(num_of_days):
     return f"24: {num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit}"
 
@@ -157,8 +175,11 @@ validate_and_execute6_1()
 
 # --------------------------------------------------------------------------------
 # -------------------------------- (7) While Loops -------------------------------
+print("\n---------------------------- (7) While Loops ---------------------------")
+
+
 def days_to_units7_1(num_of_days):
-    return f"26: {num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit}"
+    return f"27: {num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit}"
 
 
 def validate_and_execute7_1():
@@ -168,23 +189,26 @@ def validate_and_execute7_1():
             calculated_value7_1 = days_to_units7_1(user_input_number7_1)
             print(calculated_value7_1)
         elif user_input_number7_1 == 0:
-            print("26: You entered a 0; please enter a valid positive number")
+            print("27: You entered a 0; please enter a valid positive number")
         else:
-            print("26: You entered a negative value, so no conversion possible")
+            print("27: You entered a negative value, so no conversion possible")
 
     except ValueError:
-        print("26: Your input is not a number")
+        print("27: Your input is not a number")
 
 
 user_input7_1 = ""
 while user_input7_1 != "exit":
     user_input7_1 = input("25: Enter the number of days you want to convert to hours: ")
-    print("Please type exit to exit from the code if you wish to stop the loop")
+    print("26: Please type exit to exit from the code if you wish to stop the loop")
     validate_and_execute7_1()
 
 
 # --------------------------------------------------------------------------------
 # ---------------------------- (8) Lists and For Loops ---------------------------
+print("\n------------------------ (8) Lists and For Loops -----------------------")
+
+
 my_list8_1 = ["January", "February", "March"]
 print(my_list8_1[1])
 
@@ -193,7 +217,7 @@ print(my_list8_1)
 
 
 def days_to_units8_1(num_of_days):
-    return f"32: {num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit}"
+    return f"33: {num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit}"
 
 
 def validate_and_execute8_1():
@@ -203,12 +227,12 @@ def validate_and_execute8_1():
             calculated_value8_1 = days_to_units8_1(user_input_number8_1)
             print(calculated_value8_1)
         elif user_input_number8_1 == 0:
-            print("32: You entered a 0; please enter a valid positive number")
+            print("33: You entered a 0; please enter a valid positive number")
         else:
-            print("32: You entered a negative value, so no conversion possible")
+            print("33: You entered a negative value, so no conversion possible")
 
     except ValueError:
-        print("32: Your input is not a number")
+        print("33: Your input is not a number")
 
 
 user_input8_1 = ""
@@ -223,6 +247,9 @@ while user_input8_1 != "exit":
 
 # --------------------------------------------------------------------------------
 # ----------------------------------- (9) Sets -----------------------------------
+print("\n------------------------------- (9) Sets -------------------------------")
+
+
 my_set9_1 = {"January", "February", "March"}   # CANNOT access the element individually
 for element in my_set9_1:
     print(element)
@@ -234,7 +261,7 @@ print(my_set9_1)
 
 
 def days_to_units9_1(num_of_days):
-    return f"44: {num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit}"
+    return f"45: {num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit}"
 
 
 def validate_and_execute9_1():
@@ -244,18 +271,18 @@ def validate_and_execute9_1():
             calculated_value9_1 = days_to_units9_1(user_input_number9_1)
             print(calculated_value9_1)
         elif user_input_number9_1 == 0:
-            print("44: You entered a 0; please enter a valid positive number")
+            print("45: You entered a 0; please enter a valid positive number")
         else:
-            print("44: You entered a negative value, so no conversion possible")
+            print("45: You entered a negative value, so no conversion possible")
 
     except ValueError:
-        print("44: Your input is not a number")
+        print("45: Your input is not a number")
 
 
 user_input9_1 = ""
 while user_input9_1 != "exit":
-    user_input9_1 = input("38: Enter the number of days as a comma-separated list you want to convert to hours: ")
-    print("39: Please type exit to exit from the code if you wish to stop the loop")
+    user_input9_1 = input("39: Enter the number of days as a comma-separated list you want to convert to hours: ")
+    print("40: Please type exit to exit from the code if you wish to stop the loop")
     list_of_days = user_input9_1.split(", ")
     print(list_of_days)
     print(set(list_of_days))
@@ -272,6 +299,9 @@ while user_input9_1 != "exit":
 
 # --------------------------------------------------------------------------------
 # --------------------------- (10) Dictionary Data Type --------------------------
+print("\n----------------------- (10) Dictionary Data Type ----------------------")
+
+
 my_list10_1 = ["20", "30"]
 print(my_list10_1[1])
 
@@ -281,11 +311,11 @@ print(my_dictionary["unit"])
 
 def days_to_units10_1(num_of_days, conversion_unit):
     if conversion_unit == "hours":
-        return f"49: {num_of_days} days are {num_of_days * 24} hours"
+        return f"52: {num_of_days} days are {num_of_days * 24} hours"
     elif conversion_unit == "minutes":
-        return f"49: {num_of_days} days are {num_of_days * 24 * 60} minutes"
+        return f"52: {num_of_days} days are {num_of_days * 24 * 60} minutes"
     else:
-        return "unsupported unit"
+        return "52: unsupported unit"
 
 
 def validate_and_execute10_1():
@@ -295,18 +325,18 @@ def validate_and_execute10_1():
             calculated_value10_1 = days_to_units10_1(user_input_number10_1, days_and_unit_dictionary["unit"])
             print(calculated_value10_1)
         elif user_input_number10_1 == 0:
-            print("49: You entered a 0; please enter a valid positive number")
+            print("51: You entered a 0; please enter a valid positive number")
         else:
-            print("49: You entered a negative value, so no conversion possible")
+            print("51: You entered a negative value, so no conversion possible")
 
     except ValueError:
-        print("49: Your input is not a number")
+        print("51: Your input is not a number")
 
 
 user_input10_1 = ""
 while user_input10_1 != "exit":
-    user_input10_1 = input("47: Enter the number of days and conversion unit: ")
-    print("48: Please type exit to exit from the code if you wish to stop the loop")
+    user_input10_1 = input("48: Enter the number of days and conversion unit: ")
+    print("49: Please type exit to exit from the code if you wish to stop the loop")
     days_and_unit = user_input10_1.split(":")
     print(days_and_unit)
     days_and_unit_dictionary = {"days": days_and_unit[0], "unit": days_and_unit[1]}
