@@ -17,6 +17,7 @@ print("1: 50 days are " + str(50 * 24) + " hours")
 print(f"2: 50 days are {50 * calculation_to_hours} hours")
 print(f"3: 50 days are {50 * calculation_to_hours} {name_of_unit}")
 
+
 # --------------------------------------------------------------------------------
 # --------------------------------- (2) Functions --------------------------------
 print("\n----------------------------- (2) Functions ----------------------------")
@@ -39,6 +40,7 @@ days_to_units2_1()
 days_to_units2_2(50)
 days_to_units2_3(50, "Awesome!")
 
+
 # --------------------------------------------------------------------------------
 # ----------------------------------- (3) Scope ----------------------------------
 print("\n------------------------------- (3) Scope ------------------------------")
@@ -58,6 +60,7 @@ def scope_check3_2(num_of_days):
 
 scope_check3_1()
 scope_check3_2(50)
+
 
 # --------------------------------------------------------------------------------
 # -------------------------------- (4) User Input --------------------------------
@@ -81,6 +84,7 @@ user_input4_2 = input("15: Enter the number of days you want to convert to hours
 user_input_number4_2 = int(user_input4_2)
 calculated_value4_2 = days_to_units4_2(user_input_number4_2)
 print(calculated_value4_2)
+
 
 # --------------------------------------------------------------------------------
 # --------------- (5) Conditionals (if/else) and Boolean Data Type ---------------
@@ -139,6 +143,7 @@ validate_and_execute5_2()
 user_input5_3 = input("21: Enter the number of days you want to convert to hours: ")
 validate_and_execute5_3()
 
+
 # --------------------------------------------------------------------------------
 # ---------------------- (6) Error Handling with Try/Except ----------------------
 print("\n------------------ (6) Error Handling with Try/Except ------------------")
@@ -165,6 +170,7 @@ def validate_and_execute6_1():
 
 user_input6_1 = input("23: Enter the number of days you want to convert to hours: ")
 validate_and_execute6_1()
+
 
 # --------------------------------------------------------------------------------
 # -------------------------------- (7) While Loops -------------------------------
@@ -195,6 +201,7 @@ while user_input7_1 != "exit":
     user_input7_1 = input("25: Enter the number of days you want to convert to hours: ")
     print("26: Please type exit to exit from the code if you wish to stop the loop")
     validate_and_execute7_1()
+
 
 # --------------------------------------------------------------------------------
 # ---------------------------- (8) Lists and For Loops ---------------------------
@@ -234,6 +241,7 @@ while user_input8_1 != "exit":
 
     for num_of_days8_1 in user_input8_1.split(", "):  # split function return list of input values
         validate_and_execute8_1()
+
 
 # --------------------------------------------------------------------------------
 # ----------------------------------- (9) Sets -----------------------------------
@@ -330,6 +338,7 @@ while user_input10_1 != "exit":
     print(days_and_unit_dictionary)
     validate_and_execute10_1()
 
+
 # --------------------------------------------------------------------------------
 # ------------------------- Standalone Built-In Functions ------------------------
 # print()       # Prints to the standard output device
@@ -370,6 +379,7 @@ while user_input11_1 != "exit":
     # helper.validate_and_execute11_1(days_and_unit_dictionary)             # IF you want to use "import helper"
     # h.validate_and_execute11_1(days_and_unit_dictionary)                  # IF you want to use "import helper as h"
     validate_and_execute11_1(days_and_unit_dictionary, user_input_message)
+
 
 # --------------------------------------------------------------------------------
 # ------------------------------- Built-In Modules -------------------------------
