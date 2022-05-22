@@ -45,7 +45,7 @@ print("\n------------------------------- (3) Scope -----------------------------
 
 
 def scope_check3_1():
-    print("8: " + name_of_unit)  # Global variables
+    print("8: " + name_of_unit)     # Global variables
     # print(num_of_days)            # Internal variables: Inside another function - Does not exist in this function
 
 
@@ -104,7 +104,7 @@ def days_to_units5_2(num_of_days):
 
 
 def validate_and_execute5_2():
-    if user_input5_2.isdigit():  # validation - only if the user input is a number
+    if user_input5_2.isdigit():     # validation - only if the user input is a number
         user_input_number5_2 = int(user_input5_2)
         calculated_value5_2 = days_to_units5_2(user_input_number5_2)
         print(calculated_value5_2)
@@ -117,7 +117,7 @@ def days_to_units5_3(num_of_days):
 
 
 def validate_and_execute5_3():
-    if user_input5_3.isdigit():  # validation - only if the user input is a number
+    if user_input5_3.isdigit():     # validation - only if the user input is a number
 
         user_input_number5_3 = int(user_input5_3)
         if user_input_number5_3 > 0:
@@ -281,8 +281,8 @@ while user_input9_1 != "exit":
     for num_of_days9_1 in set(user_input9_1.split(", ")):  # set does NOT allow duplicate values
         validate_and_execute9_1()
 
-# List vs Sets
-# Sets do not have an order, in which if you run the code, the order of the sets will be different each time
+    # List vs Sets
+    # Sets do not have an order, in which if you run the code, the order of the sets will be different each time
 
 
 # --------------------------------------------------------------------------------
@@ -354,9 +354,9 @@ while user_input10_1 != "exit":
 # ------------------------- (11) Modularize with Modules -------------------------
 print("\n--------------------- (11) Modularize with Modules ---------------------")
 
-# import helper                                                     # This will import whole module
+# import helper                                     # This will import whole module
 # import helper as h
-# from helper import *                                              # This will import everything from the module
+# from helper import *                              # This will import everything from the module
 from helper import validate_and_execute11_1, \
     user_input_message  # If you want to import only one specific function and variables
 
