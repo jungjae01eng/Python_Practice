@@ -10,14 +10,12 @@
 # --------------------------------- (1) Variables --------------------------------
 print("\n----------------------------- (1) Variables ----------------------------")
 
-
 calculation_to_hours = 24
 name_of_unit = "hours"
 
 print("1: 50 days are " + str(50 * 24) + " hours")
 print(f"2: 50 days are {50 * calculation_to_hours} hours")
 print(f"3: 50 days are {50 * calculation_to_hours} {name_of_unit}")
-
 
 # --------------------------------------------------------------------------------
 # --------------------------------- (2) Functions --------------------------------
@@ -41,14 +39,13 @@ days_to_units2_1()
 days_to_units2_2(50)
 days_to_units2_3(50, "Awesome!")
 
-
 # --------------------------------------------------------------------------------
 # ----------------------------------- (3) Scope ----------------------------------
 print("\n------------------------------- (3) Scope ------------------------------")
 
 
 def scope_check3_1():
-    print("8: " + name_of_unit)     # Global variables
+    print("8: " + name_of_unit)  # Global variables
     # print(num_of_days)            # Internal variables: Inside another function - Does not exist in this function
 
 
@@ -61,7 +58,6 @@ def scope_check3_2(num_of_days):
 
 scope_check3_1()
 scope_check3_2(50)
-
 
 # --------------------------------------------------------------------------------
 # -------------------------------- (4) User Input --------------------------------
@@ -85,7 +81,6 @@ user_input4_2 = input("15: Enter the number of days you want to convert to hours
 user_input_number4_2 = int(user_input4_2)
 calculated_value4_2 = days_to_units4_2(user_input_number4_2)
 print(calculated_value4_2)
-
 
 # --------------------------------------------------------------------------------
 # --------------- (5) Conditionals (if/else) and Boolean Data Type ---------------
@@ -144,7 +139,6 @@ validate_and_execute5_2()
 user_input5_3 = input("21: Enter the number of days you want to convert to hours: ")
 validate_and_execute5_3()
 
-
 # --------------------------------------------------------------------------------
 # ---------------------- (6) Error Handling with Try/Except ----------------------
 print("\n------------------ (6) Error Handling with Try/Except ------------------")
@@ -171,7 +165,6 @@ def validate_and_execute6_1():
 
 user_input6_1 = input("23: Enter the number of days you want to convert to hours: ")
 validate_and_execute6_1()
-
 
 # --------------------------------------------------------------------------------
 # -------------------------------- (7) While Loops -------------------------------
@@ -203,11 +196,9 @@ while user_input7_1 != "exit":
     print("26: Please type exit to exit from the code if you wish to stop the loop")
     validate_and_execute7_1()
 
-
 # --------------------------------------------------------------------------------
 # ---------------------------- (8) Lists and For Loops ---------------------------
 print("\n------------------------ (8) Lists and For Loops -----------------------")
-
 
 my_list8_1 = ["January", "February", "March"]
 print(my_list8_1[1])
@@ -241,16 +232,14 @@ while user_input8_1 != "exit":
     print("31: Please type exit to exit from the code if you wish to stop the loop")
     print(user_input8_1.split(", "))
 
-    for num_of_days8_1 in user_input8_1.split(", "):   # split function return list of input values
+    for num_of_days8_1 in user_input8_1.split(", "):  # split function return list of input values
         validate_and_execute8_1()
-
 
 # --------------------------------------------------------------------------------
 # ----------------------------------- (9) Sets -----------------------------------
 print("\n------------------------------- (9) Sets -------------------------------")
 
-
-my_set9_1 = {"January", "February", "March"}   # CANNOT access the element individually
+my_set9_1 = {"January", "February", "March"}  # CANNOT access the element individually
 for element in my_set9_1:
     print(element)
 
@@ -289,9 +278,8 @@ while user_input9_1 != "exit":
     print(type(list_of_days))
     print(type(set(list_of_days)))
 
-    for num_of_days9_1 in set(user_input9_1.split(", ")):   # set does NOT allow duplicate values
+    for num_of_days9_1 in set(user_input9_1.split(", ")):  # set does NOT allow duplicate values
         validate_and_execute9_1()
-
 
 # List vs Sets
 # Sets do not have an order, in which if you run the code, the order of the sets will be different each time
@@ -300,7 +288,6 @@ while user_input9_1 != "exit":
 # --------------------------------------------------------------------------------
 # --------------------------- (10) Dictionary Data Type --------------------------
 print("\n----------------------- (10) Dictionary Data Type ----------------------")
-
 
 my_list10_1 = ["20", "30"]
 print(my_list10_1[1])
@@ -343,7 +330,6 @@ while user_input10_1 != "exit":
     print(days_and_unit_dictionary)
     validate_and_execute10_1()
 
-
 # --------------------------------------------------------------------------------
 # ------------------------- Standalone Built-In Functions ------------------------
 # print()       # Prints to the standard output device
@@ -362,3 +348,38 @@ while user_input10_1 != "exit":
 # list_of_months = ["January", February", "March"]  # list in string
 # set_of_days = {20, 45, 100}                       # sets: similar to list but does not allow duplicated value
 # days_and_ unit = {"days": 10, "unit": "hours"}    # dictionary
+
+
+# --------------------------------------------------------------------------------
+# ------------------------- (11) Modularize with Modules -------------------------
+print("\n--------------------- (11) Modularize with Modules ---------------------")
+
+# import helper                                                     # This will import whole module
+# import helper as h
+# from helper import *                                              # This will import everything from the module
+from helper import validate_and_execute11_1, \
+    user_input_message  # If you want to import only one specific function and variables
+
+user_input11_1 = ""
+while user_input11_1 != "exit":
+    user_input11_1 = input()
+    print("54: Please type exit to exit from the code if you wish to stop the loop")
+    days_and_unit = user_input11_1.split(":")
+    days_and_unit_dictionary = {"days": days_and_unit[0], "unit": days_and_unit[1]}
+
+    # helper.validate_and_execute11_1(days_and_unit_dictionary)             # IF you want to use "import helper"
+    # h.validate_and_execute11_1(days_and_unit_dictionary)                  # IF you want to use "import helper as h"
+    validate_and_execute11_1(days_and_unit_dictionary, user_input_message)
+
+# --------------------------------------------------------------------------------
+# ------------------------------- Built-In Modules -------------------------------
+# import os             # Print name of os
+# import logging        # Different functions to log an error message or warning
+
+
+# --------------------------------------------------------------------------------
+# --------------------------- Built-In Modules Example ---------------------------
+import logging
+
+logger = logging.getLogger("MAIN")
+logger.error("Error happened in the app")
