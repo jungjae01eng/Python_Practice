@@ -17,7 +17,7 @@ Exercise:
 
 import openpyxl
 
-inv_file = openpyxl.load_workbook("inventory.xlsx")
+inv_file = openpyxl.load_workbook("Project02_inventory.xlsx")
 product_list = inv_file["Sheet1"]
 
 
@@ -61,4 +61,4 @@ print(total_value_per_supplier)
 print(products_under_10_inv)
 
 
-inv_file.save("inventory_with_total_value.xlsx")
+inv_file.save("Project02_inventory_with_total_value.xlsx")
