@@ -1,3 +1,10 @@
+# @author Jungjae Lee
+# Independent Study
+# Created on May 22, 2022
+# Sources: Python Tutorial by TechWorld with Nana on the Youtube channel
+# --------------------------------------------------------------------------------
+
+
 def days_to_units11_1(num_of_days, conversion_unit):
     if conversion_unit == "hours":
         return f"56: {num_of_days} days are {num_of_days * 24} hours"
