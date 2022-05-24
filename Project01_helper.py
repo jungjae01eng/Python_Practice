@@ -1,6 +1,7 @@
 # @author Jungjae Lee
 # Independent Study
 # Created on May 22, 2022
+# Last Updated on May 23, 2022
 # Sources: Python Tutorial by TechWorld with Nana on the Youtube channel
 # --------------------------------------------------------------------------------
 
