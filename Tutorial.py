@@ -289,9 +289,6 @@ while user_input9_1 != "exit":
     for num_of_days9_1 in set(user_input9_1.split(", ")):  # set does NOT allow duplicate values
         validate_and_execute9_1()
 
-    # List vs Sets
-    # Sets do not have an order, in which if you run the code, the order of the sets will be different each time
-
 
 # --------------------------------------------------------------------------------
 # --------------------------- (10) Dictionary Data Type --------------------------
@@ -337,6 +334,11 @@ while user_input10_1 != "exit":
     days_and_unit_dictionary = {"days": days_and_unit[0], "unit": days_and_unit[1]}
     print(days_and_unit_dictionary)
     validate_and_execute10_1()
+
+
+# --------------------------------------------------------------------------------
+# --------------------------------- List vs Sets ---------------------------------
+# Sets do not have an order, in which if you run the code, the order of the sets will be different each time
 
 
 # --------------------------------------------------------------------------------
