@@ -4,7 +4,7 @@ Each project covered diverse skills and was able to explore different types of p
 
 
 ## Tutorial.py
-Explored basic Python, such as Functions, Input, Built-In Functions, and Modules with some notes/comments.
+Explored basic Python, such as Functions, Input, Built-In Functions, and Modules, with some notes/comments.
 Even though I had prior knowledge of Java, C, and other programming languages, this was the first step in learning Python.
 
 
