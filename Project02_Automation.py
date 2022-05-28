@@ -16,6 +16,13 @@ Exercise:
 
 
 import openpyxl
+# When you work with Excel, make sure to import the python package to work with spreadsheets specifically before you start coding!
+
+# Step to install the python package:
+# First, go to Python Package Website (https://pypi.org/), and look up "openpyxl" on search browse.
+# Then go to the most recently updated package ("openpypl 3.0.10" for me).
+# Click the copy logo next to "pip install openpypx" and paste it on the terminal in your code to install the module you need.
+
 
 inv_file = openpyxl.load_workbook("Project02_inventory.xlsx")
 product_list = inv_file["Sheet1"]
