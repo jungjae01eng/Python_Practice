@@ -1,4 +1,4 @@
-# Python_Practice
+# Python_Youtube
 These Codes are from Python Tutorial by TechWorld with Nana on the Youtube channel. I used this to learn and practice Python.
 Each project covered diverse skills and was able to explore different types of problems.
 
